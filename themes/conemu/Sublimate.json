@@ -1,0 +1,44 @@
+{
+  "Information": {
+    "Title": "Sublimation Theme for ConEMU",
+    "Author": "iivii | @odd_codes",
+    "Email": "iiviigames@pm.me",
+    "License": "BUDDYPACT",
+    "Website": "https://github.com/iiviigames",
+    "Further Info": "https://odd.codes/buddypact"
+  },
+  "Color Scheme": [
+    {
+      "0 - terminal background": "#292D3E",
+      "1 - green": "#47ACFF",
+      "2 - user name": "#C3E88D",
+      "3 - emphasis": "#C792EA",
+      "shared": {
+        "1-4": "#FF5370",
+        "3-6": "#C792EA"
+      }
+    },
+    {
+      "4 - line frontmatter": "#FF5370",
+      "5 - bold text": "#82AAFF",
+      "6 - current directory": "#FFB871",
+      "7 - normal text": "#959DCB",
+      "shared": {
+        "4-1": "#47ACFF",
+        "6-3": "#C792EA"
+      }
+    },
+    {
+      "pwsh args": "#F07178",
+      "linux current directory": "#F78C6C",
+      "linux user name": "#FFB871",
+      "light blue": "#40c3f4"
+    },
+    {
+      "yellow": "#FFC400",
+      "indigo": "#828ED5",
+      "purple": "#C792EA",
+      "grey": "#B2CCD6"
+    }
+  ]
+}
