@@ -1,27 +1,24 @@
 /*Sublimate Theme*/
+
 /*iivii || iiviigames@pm.me*/
 /*https://odd.codes	||	https://github.com/iiviigames*/
 /*=========================================*/
 
 /*	WEB APP THEME*/
 /*=========================================*/
-	/*	LEFT PANEL	*/
-		/*	LEFT SIDE PROJECT SELECTOR	*/
-			#splitter-td {
-				border-color:	#292D3DeF;
-				background: 	#253137FF;
-			}
-			#main #editor-td {
-				background-color: #000;
-				color: #676E95;
-			}
-	/*	BROWSER TAB AREA	*/
-
-		/*	PROJECT NAME	*/
+	/*	CHROME	*/
+		#splitter-td {
+			border-color:	#292D3DeF;
+			background: 	#253137FF;
+		}
+		#main #editor-td {
+			background-color: #292D3E;
+			color: #676E95;
+		}
 		#game-td .chrome-tabs input,
 		#game-td .chrome-tabs select {
 			color: #C3E88D;
-			border-color: #717CB440;
+			border-color: #555;
 		}
 		#game-td .chrome-tabs input[type="button"] {
 			background: #292D3E;
@@ -36,24 +33,23 @@
 		}
 		/*PROJECT NAME COLOR*/
 		.project-name {
-			color: #FFB871;
+			color: #F3F3F3;
 			text-shadow: #00000010;
 		}
-		/*Color of Script Tabs*/
 		.chrome-tabs .chrome-tab:not(.chrome-tab-current):hover .chrome-tab-background > svg .chrome-tab-background {
-			fill: #212d40;
-			border: solid 0.5px #f3f2f1;
+			fill: #444;
 		}
-	/*	TREE AND ICONS	*/
-			/*ASSET NAMES IN LEFT SIDEBAR*/
+
+	/*	TREE	*/
+			/*BACKGROUND AND FOREGROUND*/
 				.treeview {
-					background: #21252b;
-					color: #f3f2f18a;
+					background: #292D3E;
+					color: #676E95;
 				}
 			/*HEADER AND ITEM HOVER*/
 				.treeview .header:hover, .treeview .header:hover > span,
 				.treeview .item:hover, .treeview .item:hover > span {
-					color: #21252b;
+					background: #828ED5;
 				}
 			/*LEFT BORDER*/
 				.treeview .dir .header, .treeview .item, .treeview .items {
@@ -62,9 +58,9 @@
 			/*BEFORE/IMAGE URL*/
 				.treeview .dir > .header:before, .treeview .item:before {
 					background-image: url(tree.png);
-					opacity: 50%;
 					background-size: auto 100%;
 				}
+
 	/*	POPOUT WINDOW	*/
 		.popout-window {
 			background-color: rgba(0, 0, 0, 0.8);
@@ -83,6 +79,7 @@
 			background: #222;
 			color: white;
 		}
+
 	/*	GUTTER	*/
 			#main .ace_gutter,
 			#main .ace_status-bar {
@@ -91,27 +88,13 @@
 				color: #FFFFFF;
 				border-color: #3A3F58;
 			}
-	/*	STATUS BAR	*/
 
-		/*Whole Status Bar Size/Color*/
+	/*	STATUS BAR	*/
 			#main .ace_status-bar {
-				color: #f3f3f3;
+				color: #CFD8DC;
 				background-color: #00000010;
 			}
-		/*Row and Row number text*/
-			#main .ace_status-bar .row-label {color:#ff595e ;}
-			#main .ace_status-bar .row {color: #1982c4;}
-		/*Column and Col number text*/
-			#main .ace_status-bar .col-label {color:#ff595e ;}
-			#main .ace_status-bar .col {color: #b9e769;}
-		/*The name of the function that is being hinted*/
-			#main .ace_status-bar .context-txt {
-				color: #FFB871;
-			}
-		/*Arguments in the hinted function*/
-			#main .ace_status-comp .argument.current {
-				color: #A6E22E;
-   		}
+
 	/*	STATUS BAR - HINTS*/
 		#main #ace_status-hint, #main .ace_status-bar .context-pre {
 			border-color: #495057;
@@ -130,6 +113,7 @@
 		#main .ace_marker-layer .ace_selected-word {
 			border: none;
 		}
+
 	/*	ACE GUTTER AND LINES	*/
 			/*TEXT SHADOWS*/
 				#main .ace_gutter-define:not(:first-child) {
@@ -141,18 +125,8 @@
 				#main .gml .ace_line:not(:first-child) .ace_preproc.ace_event::after {
 					background-color: #00000030;
 				}
+
 	/*	APP STYLES	*/
-		/*APP AUTOCOMPLETE & TOOLTIPS*/
-			#app .ace_editor.ace_autocomplete, .ace_tooltip {
-				background: #1F1F1F;
-				color: #82AAFF;
-				border-color: #FFFFFF;
-			}
-		/*APP AUTOCOMPLETE & MARKER LAYER*/
-			#app .ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
-				background: #495057;
-			}
-	/*	ACE STYLES	*/
 
 		/*ACE BACKGROUND/FOREGROUND*/
 			.ace-tm {
@@ -164,13 +138,12 @@
 				.ace-tm .ace_print-margin {
 					background-color: #292D3E;
 				}
-	/*	MAIN STYLES	*/
 		/*MAIN WINDOW ACTIVE SCRIPT SELECTION BACKGROUND/HIGHLIGHTS*/
 				#main .ace_active-line {
 					background: rgba(73, 80, 97, 0.4);
 				}
 		/*MAIN WINDOW CURSOR COLOR*/
-			#main .ace_cursor {z
+			#main .ace_cursor {
 				color: #FFCC00;
 				border-left-width: 1px;
 			}
@@ -267,7 +240,16 @@
 			#main .gml .ace_string {
 				color: #E6DB74;
 			}
-
+		/*APP AUTOCOMPLETE & TOOLTIPS*/
+			#app .ace_editor.ace_autocomplete, .ace_tooltip {
+				background: #1F1F1F;
+				color: #82AAFF;
+				border-color: #FFFFFF;
+			}
+		/*APP AUTOCOMPLETE & MARKER LAYER*/
+			#app .ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+				background: #495057;
+			}
 		/*MAIN WINDOW SEARCH*/
 			#main .ace_search {
 				background: #505050;
@@ -303,53 +285,54 @@
 			#main .ace_editor .ace_scrollbar-v {
 				bottom: 12px !important;
 			}
+
 	/*	SYSTEM BUTTONS	*/
-		/*	BUTTON HOVER BACKGROUND*/
-			.system-button:hover {
-				background-color: rgba(255, 255, 255, 0.1);
-			}
-		/*	BUTTON ACTIVE BACKGROUND*/
-			.system-button:active {
-				background-color: rgba(255, 255, 255, 0.2);
-			}
-		/*	BUTTON CLOSE, MINIMIZE, PREFS - FILL COLOR*/
-			.system-button.close svg polygon,
-			.system-button.minimize svg rect,
-			.system-button.preferences svg rect {
-				fill: white;
-			}
-			.system-button.maximize svg rect {
-				stroke: white;
-			}
-			/* */
-			::-webkit-scrollbar {
-				background: #000;
-				width: 12px;
-				height: 12px;
-			}
-			::-webkit-scrollbar-thumb {
-				background-color: #555555;
-				border-radius: 6px;
-				border: 2px solid black;
-				min-height: 40px;
-			}
-			::-webkit-scrollbar-thumb:hover {
-				background-color: #777;
-			}
-			::-webkit-scrollbar-corner {
-			    background: #000;
-			}
-			::-webkit-scrollbar-track {
-				background-color:#000;
-			}
+	/*	BUTTON HOVER BACKGROUND*/
+		.system-button:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	/*	BUTTON ACTIVE BACKGROUND*/
+		.system-button:active {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+	/*	BUTTON CLOSE, MINIMIZE, PREFS - FILL COLOR*/
+		.system-button.close svg polygon,
+		.system-button.minimize svg rect,
+		.system-button.preferences svg rect {
+			fill: white;
+		}
+		.system-button.maximize svg rect {
+			stroke: white;
+		}
+		/* */
+		::-webkit-scrollbar {
+			background: #000;
+			width: 12px;
+			height: 12px;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #555555;
+			border-radius: 6px;
+			border: 2px solid black;
+			min-height: 40px;
+		}
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #777;
+		}
+		::-webkit-scrollbar-corner {
+		    background: #000;
+		}
+		::-webkit-scrollbar-track {
+			background-color:#000;
+		}
 
-			#main .gml .ace_script {
-				color: #66D9EF;
-			}
+		#main .gml .ace_script {
+			color: #66D9EF;
+		}
 
-			/*#main .gml .ace_variable {
-				color: #FFFFFF;
-			}*/
+		/*#main .gml .ace_variable {
+			color: #FFFFFF;
+		}*/
 
 
 /*	ACE THEME	*/
@@ -377,17 +360,12 @@
 		}
 	/*LOCAL VARIABLES*/
 		#main .ace-tm .ace_variable {
-			/*color: #ED9209;*/
-			color: #82AAFF;
-			font-style: italic;
+			color: #ED9209;
 		}
 	/*BUILT-IN GML FUNCTIONS & EXTENDED FUNCTIONS*/
-		#main .ace-tm .ace_function{
-			color: #E5E500;
-		}		
-
+		#main .ace-tm .ace_function,
 		#main .ace-tm .ace_extfunction {
-			color: #FFCB6B;
+			color: #E5E500;
 		}
 	/*USER SCRIPTS*/
 		#main .ace-tm .ace_script {
@@ -415,15 +393,9 @@
 			color: #c3e845;
 		}
 	/*KEYWORDS & PREPROCESSORS*/
-		#main .ace-tm .ace_keyword{
-			color: #C792EA;
-			font-style: normal;
-			font-weight: bold;
-		}	
-
+		#main .ace-tm .ace_keyword,
 		#main .ace-tm .ace_preproc {
-			/*color: #F78C6C;*/
-			color: #82AAFF;
+			color: #C792EA;
 			font-style: normal;
 			font-weight: bold;
 		}
@@ -469,15 +441,10 @@
 			font-style: italic;
 			font-weight: normal;
 		}
-	/*EXTERNAL MACROS*/
-		#main .ace-tm .ace_constant{
-			color: #b9e769;
-			font-style: normal;
-			font-weight: 350;
-		}		
-		/*EXTERNAL SYNTAX MACROS*/
+	/*CONSTANTS AND MACROS*/
+		#main .ace-tm .ace_constant,
 		#main .ace-tm .ace_extmacro {
-			color: #C792EA;
+			color: #F07178;
 			font-style: normal;
 			font-weight: 350;
 		}
@@ -490,40 +457,30 @@
 	/*NUMERICAL VALUES*/
 		#main .ace-tm .ace_numeric,
 		#main .ace-tm .ace_momenttime {
-			color: #F07178;
+			color: #C792EA;
 			font-weight: normal;
 		}
 	/*BUILT-IN GML VARIABLES*/
 		#main .ace-tm .ace_variable {
 			color: #89DDFF;
-			font-style: normal;
+			font-style: oblique;
 			font-weight: 450;
 		}
 	/*OBJECT VARIABLES*/
-		#main .ace-tm .ace_field {
-			color: #C792EA;
+		#main .ace-tm .ace_field,
+		#main .ace-tm .ace_localfield {
+			color: #F78C6C;
 			font-style: normal;
 			font-weight: normal;
 		}
-		/*Extension Local Variables, ie ROA stuff */
-		#main .ace-tm .ace_localfield {
-			color: #82AAFF;
-			font-style: italic;
-		}
 	/*BUILT-IN GML FUNCTIONS & EXTENDED CUSTOM FUNCTIONS*/
-		#main .ace-tm .ace_function {
+		#main .ace-tm .ace_function,
+		#main .ace-tm .ace_extfunction {
 			color: #FFCB6B;
 			font-style: normal;
 			font-weight: 500;
 			/*font-weight: bold;*/
 		}
-		#main .ace-tm .ace_extfunction {
-			color: #faf0ca;
-			font-style: normal;
-			font-weight: 500;
-			/*font-weight: bold;*/
-		}
-		/*			color: 7986cb;*/
 	/*USER MADE SCRIPTS*/
 		#main .ace-tm .ace_script {
 			color: #FF6BE3;
@@ -541,13 +498,8 @@
 		#main .ace-tm .ace_enumfield {
 			color: #82AAFF;
 		}
-	/*MACRO/*/
-		#main .ace-tm .ace_macro{
-			color: #f8961e;
-			font-style: italic;
-			font-weight: 350;
-		}		
-	/*MACRO NAMES*/
+	/*MACRO/MACRO NAMES*/
+		#main .ace-tm .ace_macro,
 		#main .ace-tm .ace_macroname {
 			color: #c3e845;
 			font-style: italic;
@@ -567,7 +519,7 @@
 		}
 	/*GLOBAL FIELDS*/
 		#main .ace-tm .ace_globalfield {
-			color: #B2CCD6;
+			color: #00f;
 			font-style: normal;
 			font-weight: normal;
 		}
@@ -590,11 +542,11 @@
 		}
 	/*LINE NUMBER COLOR*/
 		#main .ace-tm .ace_gutter {
-			color: #ff9250;
-			background-color: #253137 
+			color: #F78C6C;
+			background-color: #3A3F58;
 			font-size: 11px;
 		}
-	/*3A3F58;*/
+	/**/
 
 
 /*------------------------------------------------------*/

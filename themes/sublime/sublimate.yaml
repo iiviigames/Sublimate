@@ -1,0 +1,2038 @@
+author: Mattia Astorino
+contentName: sRGB
+scopeName:
+colorSpaceName: sRGB
+
+name: Material-Theme-Palenight
+semanticClass: material.theme.palenight
+settings:
+- settings:
+    activeGuide: '#828ED5'
+    background: '#292D3E'
+    caret: '#FFCC00'
+    findHighlight: '#F8E71C'
+    foreground: '#959DCB'
+    guide: '#4E557980'
+    gutterForeground: '#3A3F58'
+    invisibles: '#4E5579'
+    lineHighlight: '#00000030'
+    popupCss: "html {\n  background-color: #292D3E;\n  color: #959DCB;\n  padding:\
+      \ 16px;\n}\na {\n  color: #B2CCD6;\n  line-height: 16px;\n}\n.error, .deleted\
+      \ {\n  color: #FF5370;\n}\n.success, .inserted {\n  color: #C3E88D;\n}\n.warning,\
+      \ .modified {\n  color: #FFCB6B;\n}\n.type {\n  color: #89DDFF;\n  font-style:\
+      \ italic;\n}\n.param {\n  color: #F78C6C;\n}\n.current {\n  text-decoration:\
+      \ underline;\n}\n"
+    selection: '#717CB440'
+    selectionBorder: '#717CB440'
+    shadow: '#00000010'
+    stackGuide: '#4E5579'
+- name: Comments
+  scope: comment, punctuation.definition.comment
+  settings:
+    fontStyle: italic
+    foreground: '#676E95'
+- name: Variable
+  scope: variable, string constant.other.placeholder
+  settings:
+    foreground: '#959DCB'
+- name: Colors
+  scope: constant.other.color
+  settings:
+    foreground: '#FFFFFF'
+- name: Invalid
+  scope: invalid, invalid.illegal, invalid.broken
+  settings:
+    background: '#FF5370'
+    foreground: '#FFFFFF'
+- name: Unimplemented
+  scope: invalid.unimplemented
+  settings:
+    background: '#C3E88D'
+    foreground: '#FFFFFF'
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings:
+    background: '#C792EA'
+    foreground: '#FFFFFF'
+- name: Keyword, Storage
+  scope: keyword, storage.type, storage.modifier
+  settings:
+    foreground: '#C792EA'
+- name: Keyword, Storage
+  scope: storage.type, keyword.control
+  settings:
+    fontStyle: italic
+- name: Operator, Misc
+  scope: keyword.operator, constant.other.color, punctuation, meta.tag, punctuation.definition.tag,
+    punctuation.separator.inheritance.php, punctuation.definition.tag.html, punctuation.definition.tag.begin.html,
+    punctuation.definition.tag.end.html, punctuation.section.embedded, keyword.other.template,
+    keyword.other.substitution
+  settings:
+    foreground: '#89DDFF'
+- name: Tag
+  scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
+  settings:
+    foreground: '#F07178'
+- name: Function, Special Method, Block Level
+  scope: entity.name.function, meta.function-call, variable.function, support.function,
+    keyword.other.special-method, meta.block-level
+  settings:
+    foreground: '#82AAFF'
+- name: Other Variable, String Link
+  scope: support.other.variable, string.other.link
+  settings:
+    foreground: '#F07178'
+- name: Number, Constant, Function Argument, Tag Attribute, Embedded
+  scope: constant.numeric, constant.language, support.constant, constant.character,
+    variable.parameter, keyword.other.unit
+  settings:
+    foreground: '#F78C6C'
+- name: String, Symbols, Inherited Class, Markup Heading
+  scope: string, constant.other.symbol, constant.other.key, entity.other.inherited-class,
+    markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js
+    string.unquoted.label.js
+  settings:
+    fontStyle: normal
+    foreground: '#C3E88D'
+- name: Class, Support
+  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.other.namespace.use.php,
+    meta.use.php, support.other.namespace.php, markup.changed.git_gutter, support.type.sys-types
+  settings:
+    foreground: '#FFCB6B'
+- name: CSS Class and Support
+  scope: source.css support.type, source.sass support.type, source.scss support.type,
+    source.less support.type, source.stylus support.type
+  settings:
+    foreground: '#B2CCD6'
+- name: Sub-methods
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: '#FF5370'
+- name: Language methods
+  scope: variable.language
+  settings:
+    fontStyle: italic
+    foreground: '#FF5370'
+- name: entity.name.method.js
+  scope: entity.name.method.js
+  settings:
+    foreground: '#82AAFF'
+- name: meta.method.js
+  scope: meta.class-method.js entity.name.function.js, variable.function.constructor
+  settings:
+    foreground: '#82AAFF'
+- name: Attributes
+  scope: entity.other.attribute-name
+  settings:
+    foreground: '#C792EA'
+- name: HTML Attributes
+  scope: text.html.basic entity.other.attribute-name.html, text.html.basic entity.other.attribute-name
+  settings:
+    fontStyle: italic
+    foreground: '#FFCB6B'
+- name: CSS Classes
+  scope: entity.other.attribute-name.class
+  settings:
+    foreground: '#FFCB6B'
+- name: CSS Id
+  scope: source.sass keyword.control
+  settings:
+    foreground: '#82AAFF'
+- name: Inserted
+  scope: markup.inserted
+  settings:
+    foreground: '#C3E88D'
+- name: Deleted
+  scope: markup.deleted
+  settings:
+    foreground: '#FF5370'
+- name: Changed
+  scope: markup.changed
+  settings:
+    foreground: '#C792EA'
+- name: Regular Expressions
+  scope: string.regexp
+  settings:
+    foreground: '#89DDFF'
+- name: Escape Characters
+  scope: constant.character.escape
+  settings:
+    foreground: '#89DDFF'
+- name: URL
+  scope: '*url*, *link*, *uri*'
+  settings:
+    fontStyle: underline
+- name: Search Results Nums
+  scope: constant.numeric.line-number.find-in-files - match
+  settings:
+    foreground: '#C17E70'
+- name: Search Results Lines
+  scope: entity.name.filename.find-in-files
+  settings:
+    foreground: '#C3E88D'
+- name: Decorators
+  scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
+  settings:
+    fontStyle: italic
+    foreground: '#82AAFF'
+- name: ES7 Bind Operator
+  scope: source.js constant.other.object.key.js string.unquoted.label.js
+  settings:
+    fontStyle: italic
+    foreground: '#FF5370'
+- name: JSON Key - Level 8
+  scope: source.json meta meta meta meta meta meta meta meta meta meta meta meta meta
+    meta meta meta.structure.dictionary.json string.quoted.double.json - meta meta
+    meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json string.quoted.double.json, source.json meta
+    meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta
+    meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json
+    punctuation.definition.string
+  settings:
+    foreground: '#C3E88D'
+- name: JSON Key - Level 7
+  scope: source.json meta meta meta meta meta meta meta meta meta meta meta meta meta
+    meta.structure.dictionary.json string.quoted.double.json - meta meta meta meta
+    meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json
+    string.quoted.double.json, source.json meta meta meta meta meta meta meta meta
+    meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string
+    - meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#C792EA'
+- name: JSON Key - Level 6
+  scope: source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta
+    meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json,
+    source.json meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    punctuation.definition.string - meta meta meta meta meta meta meta meta meta meta
+    meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#F07178'
+- name: JSON Key - Level 5
+  scope: source.json meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    string.quoted.double.json - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json string.quoted.double.json, source.json meta
+    meta meta meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string
+    - meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#82AAFF'
+- name: JSON Key - Level 4
+  scope: source.json meta meta meta meta meta meta meta meta.structure.dictionary.json
+    string.quoted.double.json - meta meta meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json string.quoted.double.json, source.json meta
+    meta meta meta meta meta meta meta.structure.dictionary.json punctuation.definition.string
+    - meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json
+    punctuation.definition.string
+  settings:
+    foreground: '#C17E70'
+- name: JSON Key - Level 3
+  scope: source.json meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json
+    - meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json
+    string.quoted.double.json, source.json meta meta meta meta meta meta.structure.dictionary.json
+    punctuation.definition.string - meta meta meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#FF5370'
+- name: JSON Key - Level 2
+  scope: source.json meta meta meta meta.structure.dictionary.json string.quoted.double.json
+    - meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json
+    string.quoted.double.json, source.json meta meta meta meta.structure.dictionary.json
+    punctuation.definition.string - meta meta meta meta.structure.dictionary.json
+    meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#F78C6C'
+- name: JSON Key - Level 1
+  scope: source.json meta meta.structure.dictionary.json string.quoted.double.json
+    - meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json,
+    source.json meta meta.structure.dictionary.json punctuation.definition.string
+    - meta meta.structure.dictionary.json meta.structure.dictionary.value.json punctuation.definition.string
+  settings:
+    foreground: '#FFCB6B'
+- name: JSON Key - Level 0
+  scope: source.json meta.structure.dictionary.json string.quoted.double.json - meta.structure.dictionary.json
+    meta.structure.dictionary.value.json string.quoted.double.json, source.json meta.structure.dictionary.json
+    punctuation.definition.string - meta.structure.dictionary.json meta.structure.dictionary.value.json
+    punctuation.definition.string
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Plain
+  scope: text.html.markdown, punctuation.definition.list_item.markdown
+  settings:
+    foreground: '#959DCB'
+- name: Markdown - Markup Raw Inline
+  scope: text.html.markdown markup.raw.inline
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Markup Raw Inline Punctuation
+  scope: text.html.markdown punctuation.definition.raw.markdown
+  settings:
+    foreground: '#4E5579'
+- name: Markdown - Line Break
+  scope: text.html.markdown meta.dummy.line-break
+  settings:
+    foreground: ''
+- name: Markdown - Heading
+  scope: markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown
+    punctuation.definition.heading.markdown
+  settings:
+    foreground: '#C3E88D'
+- name: Markup - Italic
+  scope: markup.italic
+  settings:
+    fontStyle: italic
+    foreground: '#F07178'
+- name: Markup - Bold
+  scope: markup.bold, markup.bold string
+  settings:
+    fontStyle: bold
+    foreground: '#F07178'
+- name: Markup - Bold & Italic
+  scope: markup.bold markup.italic, markup.italic markup.bold, markup.quote markup.bold,
+    markup.bold markup.italic string, markup.italic markup.bold string, markup.quote
+    markup.bold string
+  settings:
+    fontStyle: bold italic
+- name: Markup - Underline
+  scope: markup.underline
+  settings:
+    fontStyle: underline
+    foreground: '#F78C6C'
+- name: Markup - Strike
+  scope: markup.strike
+  settings:
+    fontStyle: strike
+    foreground: ''
+- name: Markdown - Blockquote
+  scope: markup.quote punctuation.definition.blockquote.markdown
+  settings:
+    background: '#4E5579'
+    foreground: '#4E5579'
+- name: Markup - Quote
+  scope: markup.quote
+  settings:
+    fontStyle: italic
+    foreground: ''
+- name: Markdown - Link
+  scope: string.other.link.title.markdown
+  settings:
+    foreground: '#82AAFF'
+- name: Markdown - Link Description
+  scope: string.other.link.description.title.markdown
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Link Anchor
+  scope: constant.other.reference.link.markdown
+  settings:
+    foreground: '#FFCB6B'
+- name: Markup - Raw Block
+  scope: markup.raw.block
+  settings:
+    foreground: '#C792EA'
+- name: Markdown - Raw Block Fenced
+  scope: markup.raw.block.fenced.markdown
+  settings:
+    background: '#00000030'
+- name: Markdown - Fenced Bode Block
+  scope: punctuation.definition.fenced.markdown
+  settings:
+    background: '#00000030'
+- name: Markdown - Fenced Bode Block Variable
+  scope: markup.raw.block.fenced.markdown, variable.language.fenced.markdown, punctuation.section.class.end
+  settings:
+    foreground: '#959DCB'
+- name: Markdown - Fenced Language
+  scope: variable.language.fenced.markdown
+  settings:
+    fontStyle: ''
+    foreground: '#4E5579'
+- name: Markdown - Punctuation Definition
+  scope: text.html.markdown punctuation.definition
+  settings:
+    foreground: '#676E95'
+- name: Markdown HTML - Punctuation Definition
+  scope: text.html.markdown meta.disable-markdown punctuation.definition
+  settings:
+    foreground: '#89DDFF'
+- name: Markdown - Separator
+  scope: meta.separator
+  settings:
+    background: '#00000030'
+    fontStyle: bold
+    foreground: '#4E5579'
+- name: Markup - Table
+  scope: markup.table
+  settings:
+    background: ''
+    foreground: '#959DCB'
+- name: AceJump Label - Blue
+  scope: acejump.label.blue
+  settings:
+    background: '#82AAFF'
+    foreground: '#FFFFFF'
+- name: AceJump Label - Green
+  scope: acejump.label.green
+  settings:
+    background: '#C3E88D'
+    foreground: '#FFFFFF'
+- name: AceJump Label - Orange
+  scope: acejump.label.orange
+  settings:
+    background: '#F78C6C'
+    foreground: '#FFFFFF'
+- name: AceJump Label - Purple
+  scope: acejump.label.purple
+  settings:
+    background: '#C792EA'
+    foreground: '#FFFFFF'
+- name: SublimeLinter Warning
+  scope: sublimelinter.mark.warning
+  settings:
+    foreground: '#FFCB6B'
+- name: SublimeLinter Gutter Mark
+  scope: sublimelinter.gutter-mark
+  settings:
+    foreground: '#FFFFFF'
+- name: SublimeLinter Error
+  scope: sublimelinter.mark.error
+  settings:
+    foreground: '#FF5370'
+- name: SublimeLinter Annotation
+  scope: sublimelinter.annotations
+  settings:
+    background: '#C17E70'
+- name: GitGutter Ignored
+  scope: markup.ignored.git_gutter
+  settings:
+    foreground: '#4E5579'
+- name: GitGutter Untracked
+  scope: markup.untracked.git_gutter
+  settings:
+    foreground: '#4E5579'
+- name: GitGutter Inserted
+  scope: markup.inserted.git_gutter
+  settings:
+    foreground: '#C3E88D'
+- name: GitGutter Changed
+  scope: markup.changed.git_gutter
+  settings:
+    foreground: '#FFCB6B'
+- name: GitGutter Deleted
+  scope: markup.deleted.git_gutter
+  settings:
+    foreground: '#FF5370'
+- name: Bracket Default
+  scope: brackethighlighter.default
+  settings:
+    foreground: '#B2CCD64C'
+- name: Bracket Curly
+  scope: brackethighlighter.curly
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket Round
+  scope: brackethighlighter.round
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket Square
+  scope: brackethighlighter.square
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket Angle
+  scope: brackethighlighter.angle
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket Tag
+  scope: brackethighlighter.tag
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket C Define
+  scope: brackethighlighter.c_define
+  settings:
+    foreground: '#C792EA4C'
+- name: Bracket Quote
+  scope: brackethighlighter.quote
+  settings:
+    foreground: '#89DDFF4C'
+- name: Bracket Unmatched
+  scope: brackethighlighter.unmatched
+  settings:
+    foreground: '#FF53704C'
+- scope: col_gutter
+  settings:
+    background: '#000000'
+    foreground: '#ffffff'
+- scope: col_228822FF
+  settings:
+    background: '#228822FF'
+    foreground: '#DDDDDDFF'
+- scope: col_282C34FF
+  settings:
+    background: '#282C34FF'
+    foreground: '#ABABABFF'
+- scope: col_228822CC
+  settings:
+    background: '#228822CC'
+    foreground: '#D4D4D4FF'
+- scope: col_331144FF
+  settings:
+    background: '#331144FF'
+    foreground: '#A0A0A0FF'
+- scope: col_331155FF
+  settings:
+    background: '#331155FF'
+    foreground: '#A2A2A2FF'
+- scope: col_314166FF
+  settings:
+    background: '#314166FF'
+    foreground: '#C0C0C0FF'
+- scope: col_33114411
+  settings:
+    background: '#33114411'
+    foreground: '#ACACACFF'
+- scope: col_551188FF
+  settings:
+    background: '#551188FF'
+    foreground: '#B2B2B2FF'
+- scope: col_518FFFFF
+  settings:
+    background: '#518FFFFF'
+    foreground: '#090909FF'
+- scope: col_518FFF36
+  settings:
+    background: '#518FFF36'
+    foreground: '#C1C1C1FF'
+- scope: col_FFFFFFFF
+  settings:
+    background: '#FFFFFFFF'
+    foreground: '#7F7F7FFF'
+- scope: col_FFFFFF01
+  settings:
+    background: '#FFFFFF01'
+    foreground: '#AEAEAEFF'
+- scope: col_AABBBB33
+  settings:
+    background: '#AABBBB33'
+    foreground: '#C8C8C8FF'
+- scope: col_AABBBBFF
+  settings:
+    background: '#AABBBBFF'
+    foreground: '#353535FF'
+- scope: col_ABB2BFFF
+  settings:
+    background: '#ABB2BFFF'
+    foreground: '#313131FF'
+- scope: col_AABBBB22
+  settings:
+    background: '#AABBBB22'
+    foreground: '#BFBFBFFF'
+- scope: col_33AA33FF
+  settings:
+    background: '#33AA33FF'
+    foreground: '#F8F8F8FF'
+- scope: col_3A3F4BFF
+  settings:
+    background: '#3A3F4BFF'
+    foreground: '#BEBEBEFF'
+- scope: col_3A3F4BA6
+  settings:
+    background: '#3A3F4BA6'
+    foreground: '#B8B8B8FF'
+- scope: col_33EEFFFF
+  settings:
+    background: '#33EEFFFF'
+    foreground: '#383838FF'
+- scope: col_33EE44FF
+  settings:
+    background: '#33EE44FF'
+    foreground: '#222222FF'
+- scope: col_33EE4444
+  settings:
+    background: '#33EE4444'
+    foreground: '#CCCCCCFF'
+- scope: col_3E4452FF
+  settings:
+    background: '#3E4452FF'
+    foreground: '#C3C3C3FF'
+- scope: col_990099FF
+  settings:
+    background: '#990099FF'
+    foreground: '#BFBFBFFF'
+- scope: col_9999BBBB
+  settings:
+    background: '#9999BBBB'
+    foreground: '#FFFFFFFF'
+- scope: col_99BBFFFF
+  settings:
+    background: '#99BBFFFF'
+    foreground: '#383838FF'
+- scope: col_9999BBFF
+  settings:
+    background: '#9999BBFF'
+    foreground: '#1C1C1CFF'
+- scope: col_99BBFF0A
+  settings:
+    background: '#99BBFF0A'
+    foreground: '#B3B3B3FF'
+- scope: col_44BB55FF
+  settings:
+    background: '#44BB55FF'
+    foreground: '#0B0B0BFF'
+- scope: col_44BB5533
+  settings:
+    background: '#44BB5533'
+    foreground: '#C0C0C0FF'
+- scope: col_4B5365FF
+  settings:
+    background: '#4B5365FF'
+    foreground: '#D2D2D2FF'
+- scope: col_4B5365A6
+  settings:
+    background: '#4B5365A6'
+    foreground: '#C5C5C5FF'
+- scope: col_99DDAAFF
+  settings:
+    background: '#99DDAAFF'
+    foreground: '#424242FF'
+- scope: col_99DDAA55
+  settings:
+    background: '#99DDAA55'
+    foreground: '#DFDFDFFF'
+- scope: col_9DA54BFF
+  settings:
+    background: '#9DA54BFF'
+    foreground: '#181818FF'
+- scope: col_552288FF
+  settings:
+    background: '#552288FF'
+    foreground: '#BCBCBCFF'
+- scope: col_552288BB
+  settings:
+    background: '#552288BB'
+    foreground: '#B8B8B8FF'
+- scope: col_528BFFFF
+  settings:
+    background: '#528BFFFF'
+    foreground: '#070707FF'
+- scope: col_FF6347FF
+  settings:
+    background: '#FF6347FF'
+    foreground: '#0E0E0EFF'
+- scope: col_118811FF
+  settings:
+    background: '#118811FF'
+    foreground: '#D6D6D6FF'
+- scope: col_118811AA
+  settings:
+    background: '#118811AA'
+    foreground: '#C9C9C9FF'
+- scope: col_181A1FFF
+  settings:
+    background: '#181A1FFF'
+    foreground: '#999999FF'
+- scope: col_44BB44FF
+  settings:
+    background: '#44BB44FF'
+    foreground: '#090909FF'
+- scope: col_44BB44BB
+  settings:
+    background: '#44BB44BB'
+    foreground: '#F1F1F1FF'
+- scope: col_4B4B4BFF
+  settings:
+    background: '#4B4B4BFF'
+    foreground: '#CBCBCBFF'
+- scope: col_4B4B4B4D
+  settings:
+    background: '#4B4B4B4D'
+    foreground: '#B6B6B6FF'
+- scope: col_221122FF
+  settings:
+    background: '#221122FF'
+    foreground: '#989898FF'
+- scope: col_21252BFF
+  settings:
+    background: '#21252BFF'
+    foreground: '#A4A4A4FF'
+- scope: col_22112255
+  settings:
+    background: '#22112255'
+    foreground: '#A6A6A6FF'
+- scope: col_221111FF
+  settings:
+    background: '#221111FF'
+    foreground: '#969696FF'
+- scope: col_EE00CCFF
+  settings:
+    background: '#EE00CCFF'
+    foreground: '#DEDEDEFF'
+- scope: col_E0C285FF
+  settings:
+    background: '#E0C285FF'
+    foreground: '#444444FF'
+- scope: col_EE00CC22
+  settings:
+    background: '#EE00CC22'
+    foreground: '#B4B4B4FF'
+- scope: col_4433DDFF
+  settings:
+    background: '#4433DDFF'
+    foreground: '#CBCBCBFF'
+- scope: col_4433DD01
+  settings:
+    background: '#4433DD01'
+    foreground: '#ADADADFF'
+- scope: col_43D08AFF
+  settings:
+    background: '#43D08AFF'
+    foreground: '#1D1D1DFF'
+- scope: col_FFFF6633
+  settings:
+    background: '#FFFF6633'
+    foreground: '#D4D4D4FF'
+- scope: col_FFFF66FF
+  settings:
+    background: '#FFFF66FF'
+    foreground: '#6D6D6DFF'
+- scope: col_225522FF
+  settings:
+    background: '#225522FF'
+    foreground: '#BFBFBFFF'
+- scope: col_22552288
+  settings:
+    background: '#22552288'
+    foreground: '#B7B7B7FF'
+- scope: col_252830FF
+  settings:
+    background: '#252830FF'
+    foreground: '#A8A8A8FF'
+- scope: col_333333FF
+  settings:
+    background: '#333333FF'
+    foreground: '#B3B3B3FF'
+- scope: col_33333388
+  settings:
+    background: '#33333388'
+    foreground: '#B0B0B0FF'
+- scope: col_333840FF
+  settings:
+    background: '#333840FF'
+    foreground: '#B7B7B7FF'
+- scope: col_44BB66FF
+  settings:
+    background: '#44BB66FF'
+    foreground: '#0D0D0DFF'
+- scope: col_777777FF
+  settings:
+    background: '#777777FF'
+    foreground: '#F7F7F7FF'
+- scope: col_777D88FF
+  settings:
+    background: '#777D88FF'
+    foreground: '#FCFCFCFF'
+- scope: col_777777DD
+  settings:
+    background: '#777777DD'
+    foreground: '#EDEDEDFF'
+- scope: col_3A3F58FF
+  settings:
+    background: '#3A3F58FF'
+    foreground: '#C0C0C0FF'
+- scope: col_B4B4B4FF
+  settings:
+    background: '#B4B4B4FF'
+    foreground: '#343434FF'
+- scope: col_7F7F7FFF
+  settings:
+    background: '#7F7F7FFF'
+    foreground: '#FFFFFFFF'
+- scope: col_282C3DFF
+  settings:
+    background: '#282C3DFF'
+    foreground: '#ACACACFF'
+- scope: col_ABABABFF
+  settings:
+    background: '#ABABABFF'
+    foreground: '#2B2B2BFF'
+- scope: col_999999FF
+  settings:
+    background: '#999999FF'
+    foreground: '#191919FF'
+- scope: col_CCCCCCFF
+  settings:
+    background: '#CCCCCCFF'
+    foreground: '#4C4C4CFF'
+- scope: col_C792EA4C
+  settings:
+    background: '#C792EA4C'
+    foreground: '#D3D3D3FF'
+- scope: col_C3C3C3FF
+  settings:
+    background: '#C3C3C3FF'
+    foreground: '#434343FF'
+- scope: col_DFDFDFFF
+  settings:
+    background: '#DFDFDFFF'
+    foreground: '#5F5F5FFF'
+- scope: col_B6B6B6FF
+  settings:
+    background: '#B6B6B6FF'
+    foreground: '#363636FF'
+- scope: col_0B0B0BFF
+  settings:
+    background: '#0B0B0BFF'
+    foreground: '#8B8B8BFF'
+- scope: col_383838FF
+  settings:
+    background: '#383838FF'
+    foreground: '#B8B8B8FF'
+- scope: col_ACACACFF
+  settings:
+    background: '#ACACACFF'
+    foreground: '#2C2C2CFF'
+- scope: col_82AAFFFF
+  settings:
+    background: '#82AAFFFF'
+    foreground: '#272727FF'
+- scope: col_B8B8B8FF
+  settings:
+    background: '#B8B8B8FF'
+    foreground: '#383838FF'
+- scope: col_FF53704C
+  settings:
+    background: '#FF53704C'
+    foreground: '#C9C9C9FF'
+- scope: col_B7B7B7FF
+  settings:
+    background: '#B7B7B7FF'
+    foreground: '#373737FF'
+- scope: col_F1F1F1FF
+  settings:
+    background: '#F1F1F1FF'
+    foreground: '#717171FF'
+- scope: col_A6A6A6FF
+  settings:
+    background: '#A6A6A6FF'
+    foreground: '#262626FF'
+- scope: col_676E95FF
+  settings:
+    background: '#676E95FF'
+    foreground: '#F0F0F0FF'
+- scope: col_A8A8A8FF
+  settings:
+    background: '#A8A8A8FF'
+    foreground: '#282828FF'
+- scope: col_4E5579FF
+  settings:
+    background: '#4E5579FF'
+    foreground: '#D7D7D7FF'
+- scope: col_D4D4D4FF
+  settings:
+    background: '#D4D4D4FF'
+    foreground: '#545454FF'
+- scope: col_DDDDDDFF
+  settings:
+    background: '#DDDDDDFF'
+    foreground: '#5D5D5DFF'
+- scope: col_ADADADFF
+  settings:
+    background: '#ADADADFF'
+    foreground: '#2D2D2DFF'
+- scope: col_828ED5FF
+  settings:
+    background: '#828ED5FF'
+    foreground: '#121212FF'
+- scope: col_4E557980
+  settings:
+    background: '#4E557980'
+    foreground: '#C2C2C2FF'
+- scope: col_FFCC00FF
+  settings:
+    background: '#FFCC00FF'
+    foreground: '#434343FF'
+- scope: col_1D1D1DFF
+  settings:
+    background: '#1D1D1DFF'
+    foreground: '#9D9D9DFF'
+- scope: col_CBCBCBFF
+  settings:
+    background: '#CBCBCBFF'
+    foreground: '#4B4B4BFF'
+- scope: col_C9C9C9FF
+  settings:
+    background: '#C9C9C9FF'
+    foreground: '#494949FF'
+- scope: col_424242FF
+  settings:
+    background: '#424242FF'
+    foreground: '#C2C2C2FF'
+- scope: col_89DDFFFF
+  settings:
+    background: '#89DDFFFF'
+    foreground: '#474747FF'
+- scope: col_444444FF
+  settings:
+    background: '#444444FF'
+    foreground: '#C4C4C4FF'
+- scope: col_BFBFBFFF
+  settings:
+    background: '#BFBFBFFF'
+    foreground: '#3F3F3FFF'
+- scope: col_070707FF
+  settings:
+    background: '#070707FF'
+    foreground: '#878787FF'
+- scope: col_1C1C1CFF
+  settings:
+    background: '#1C1C1CFF'
+    foreground: '#9C9C9CFF'
+- scope: col_B2B2B2FF
+  settings:
+    background: '#B2B2B2FF'
+    foreground: '#323232FF'
+- scope: col_C0C0C0FF
+  settings:
+    background: '#C0C0C0FF'
+    foreground: '#404040FF'
+- scope: col_BEBEBEFF
+  settings:
+    background: '#BEBEBEFF'
+    foreground: '#3E3E3EFF'
+- scope: col_A4A4A4FF
+  settings:
+    background: '#A4A4A4FF'
+    foreground: '#242424FF'
+- scope: col_6D6D6DFF
+  settings:
+    background: '#6D6D6DFF'
+    foreground: '#EDEDEDFF'
+- scope: col_F8F8F8FF
+  settings:
+    background: '#F8F8F8FF'
+    foreground: '#787878FF'
+- scope: col_C5C5C5FF
+  settings:
+    background: '#C5C5C5FF'
+    foreground: '#454545FF'
+- scope: col_969696FF
+  settings:
+    background: '#969696FF'
+    foreground: '#161616FF'
+- scope: col_353535FF
+  settings:
+    background: '#353535FF'
+    foreground: '#B5B5B5FF'
+- scope: col_B3B3B3FF
+  settings:
+    background: '#B3B3B3FF'
+    foreground: '#333333FF'
+- scope: col_F8E71CFF
+  settings:
+    background: '#F8E71CFF'
+    foreground: '#545454FF'
+- scope: col_717CB440
+  settings:
+    background: '#717CB440'
+    foreground: '#C2C2C2FF'
+- scope: col_FFCB6BFF
+  settings:
+    background: '#FFCB6BFF'
+    foreground: '#4F4F4FFF'
+- scope: col_000000FF
+  settings:
+    background: '#000000FF'
+    foreground: '#808080FF'
+- scope: col_FCFCFCFF
+  settings:
+    background: '#FCFCFCFF'
+    foreground: '#7C7C7CFF'
+- scope: col_00000010
+  settings:
+    background: '#00000010'
+    foreground: '#AAAAAAFF'
+- scope: col_313131FF
+  settings:
+    background: '#313131FF'
+    foreground: '#B1B1B1FF'
+- scope: col_B2CCD6FF
+  settings:
+    background: '#B2CCD6FF'
+    foreground: '#454545FF'
+- scope: col_0D0D0DFF
+  settings:
+    background: '#0D0D0DFF'
+    foreground: '#8D8D8DFF'
+- scope: col_0E0E0EFF
+  settings:
+    background: '#0E0E0EFF'
+    foreground: '#8E8E8EFF'
+- scope: col_F7F7F7FF
+  settings:
+    background: '#F7F7F7FF'
+    foreground: '#777777FF'
+- scope: col_A0A0A0FF
+  settings:
+    background: '#A0A0A0FF'
+    foreground: '#202020FF'
+- scope: col_959DCBFF
+  settings:
+    background: '#959DCBFF'
+    foreground: '#1F1F1FFF'
+- scope: col_FF5370FF
+  settings:
+    background: '#FF5370FF'
+    foreground: '#090909FF'
+- scope: col_EDEDEDFF
+  settings:
+    background: '#EDEDEDFF'
+    foreground: '#6D6D6DFF'
+- scope: col_090909FF
+  settings:
+    background: '#090909FF'
+    foreground: '#898989FF'
+- scope: col_B0B0B0FF
+  settings:
+    background: '#B0B0B0FF'
+    foreground: '#303030FF'
+- scope: col_C17E70FF
+  settings:
+    background: '#C17E70FF'
+    foreground: '#101010FF'
+- scope: col_C3E88DFF
+  settings:
+    background: '#C3E88DFF'
+    foreground: '#525252FF'
+- scope: col_F07178FF
+  settings:
+    background: '#F07178FF'
+    foreground: '#171717FF'
+- scope: col_F78C6CFF
+  settings:
+    background: '#F78C6CFF'
+    foreground: '#282828FF'
+- scope: col_89DDFF4C
+  settings:
+    background: '#89DDFF4C'
+    foreground: '#DBDBDBFF'
+- scope: col_A2A2A2FF
+  settings:
+    background: '#A2A2A2FF'
+    foreground: '#222222FF'
+- scope: col_00000030
+  settings:
+    background: '#00000030'
+    foreground: '#A5A5A5FF'
+- scope: col_BCBCBCFF
+  settings:
+    background: '#BCBCBCFF'
+    foreground: '#3C3C3CFF'
+- scope: col_C792EAFF
+  settings:
+    background: '#C792EAFF'
+    foreground: '#2B2B2BFF'
+- scope: col_222222FF
+  settings:
+    background: '#222222FF'
+    foreground: '#A2A2A2FF'
+- scope: col_181818FF
+  settings:
+    background: '#181818FF'
+    foreground: '#989898FF'
+- scope: col_D6D6D6FF
+  settings:
+    background: '#D6D6D6FF'
+    foreground: '#565656FF'
+- scope: col_B2CCD64C
+  settings:
+    background: '#B2CCD64C'
+    foreground: '#DADADAFF'
+- scope: col_C8C8C8FF
+  settings:
+    background: '#C8C8C8FF'
+    foreground: '#484848FF'
+- scope: col_AEAEAEFF
+  settings:
+    background: '#AEAEAEFF'
+    foreground: '#2E2E2EFF'
+- scope: col_C1C1C1FF
+  settings:
+    background: '#C1C1C1FF'
+    foreground: '#414141FF'
+- scope: col_D2D2D2FF
+  settings:
+    background: '#D2D2D2FF'
+    foreground: '#525252FF'
+- scope: col_DEDEDEFF
+  settings:
+    background: '#DEDEDEFF'
+    foreground: '#5E5E5EFF'
+- scope: col_989898FF
+  settings:
+    background: '#989898FF'
+    foreground: '#181818FF'
+- scope: col_303030FF
+  settings:
+    background: '#303030FF'
+    foreground: '#B0B0B0FF'
+- scope: col_B1B1B1FF
+  settings:
+    background: '#B1B1B1FF'
+    foreground: '#313131FF'
+- scope: col_8E8E8EFF
+  settings:
+    background: '#8E8E8EFF'
+    foreground: '#0E0E0EFF'
+- scope: col_4C4C4CFF
+  settings:
+    background: '#4C4C4CFF'
+    foreground: '#CCCCCCFF'
+- scope: col_404040FF
+  settings:
+    background: '#404040FF'
+    foreground: '#C0C0C0FF'
+- scope: col_3C3C3CFF
+  settings:
+    background: '#3C3C3CFF'
+    foreground: '#BCBCBCFF'
+- scope: col_101010FF
+  settings:
+    background: '#101010FF'
+    foreground: '#909090FF'
+- scope: col_2C2C2CFF
+  settings:
+    background: '#2C2C2CFF'
+    foreground: '#ACACACFF'
+- scope: col_DADADAFF
+  settings:
+    background: '#DADADAFF'
+    foreground: '#5A5A5AFF'
+- scope: col_717171FF
+  settings:
+    background: '#717171FF'
+    foreground: '#F1F1F1FF'
+- scope: col_D3D3D3FF
+  settings:
+    background: '#D3D3D3FF'
+    foreground: '#535353FF'
+- scope: col_414141FF
+  settings:
+    background: '#414141FF'
+    foreground: '#C1C1C1FF'
+- scope: col_363636FF
+  settings:
+    background: '#363636FF'
+    foreground: '#B6B6B6FF'
+- scope: col_8D8D8DFF
+  settings:
+    background: '#8D8D8DFF'
+    foreground: '#0D0D0DFF'
+- scope: col_9D9D9DFF
+  settings:
+    background: '#9D9D9DFF'
+    foreground: '#1D1D1DFF'
+- scope: col_878787FF
+  settings:
+    background: '#878787FF'
+    foreground: '#070707FF'
+- scope: col_787878FF
+  settings:
+    background: '#787878FF'
+    foreground: '#F8F8F8FF'
+- scope: col_2B2B2BFF
+  settings:
+    background: '#2B2B2BFF'
+    foreground: '#ABABABFF'
+- scope: col_2E2E2EFF
+  settings:
+    background: '#2E2E2EFF'
+    foreground: '#AEAEAEFF'
+- scope: col_898989FF
+  settings:
+    background: '#898989FF'
+    foreground: '#090909FF'
+- scope: col_242424FF
+  settings:
+    background: '#242424FF'
+    foreground: '#A4A4A4FF'
+- scope: col_1F1F1FFF
+  settings:
+    background: '#1F1F1FFF'
+    foreground: '#9F9F9FFF'
+- scope: col_5F5F5FFF
+  settings:
+    background: '#5F5F5FFF'
+    foreground: '#DFDFDFFF'
+- scope: col_C4C4C4FF
+  settings:
+    background: '#C4C4C4FF'
+    foreground: '#444444FF'
+- scope: col_2D2D2DFF
+  settings:
+    background: '#2D2D2DFF'
+    foreground: '#ADADADFF'
+- scope: col_161616FF
+  settings:
+    background: '#161616FF'
+    foreground: '#969696FF'
+- scope: col_9C9C9CFF
+  settings:
+    background: '#9C9C9CFF'
+    foreground: '#1C1C1CFF'
+- scope: col_B5B5B5FF
+  settings:
+    background: '#B5B5B5FF'
+    foreground: '#353535FF'
+- scope: col_191919FF
+  settings:
+    background: '#191919FF'
+    foreground: '#999999FF'
+- scope: col_525252FF
+  settings:
+    background: '#525252FF'
+    foreground: '#D2D2D2FF'
+- scope: col_5E5E5EFF
+  settings:
+    background: '#5E5E5EFF'
+    foreground: '#DEDEDEFF'
+- scope: col_171717FF
+  settings:
+    background: '#171717FF'
+    foreground: '#979797FF'
+- scope: col_AAAAAAFF
+  settings:
+    background: '#AAAAAAFF'
+    foreground: '#2A2A2AFF'
+- scope: col_121212FF
+  settings:
+    background: '#121212FF'
+    foreground: '#929292FF'
+- scope: col_434343FF
+  settings:
+    background: '#434343FF'
+    foreground: '#C3C3C3FF'
+- scope: col_262626FF
+  settings:
+    background: '#262626FF'
+    foreground: '#A6A6A6FF'
+- scope: col_5D5D5DFF
+  settings:
+    background: '#5D5D5DFF'
+    foreground: '#DDDDDDFF'
+- scope: col_3F3F3FFF
+  settings:
+    background: '#3F3F3FFF'
+    foreground: '#BFBFBFFF'
+- scope: col_373737FF
+  settings:
+    background: '#373737FF'
+    foreground: '#B7B7B7FF'
+- scope: col_A5A5A5FF
+  settings:
+    background: '#A5A5A5FF'
+    foreground: '#252525FF'
+- scope: col_565656FF
+  settings:
+    background: '#565656FF'
+    foreground: '#D6D6D6FF'
+- scope: col_8B8B8BFF
+  settings:
+    background: '#8B8B8BFF'
+    foreground: '#0B0B0BFF'
+- scope: col_494949FF
+  settings:
+    background: '#494949FF'
+    foreground: '#C9C9C9FF'
+- scope: col_282828FF
+  settings:
+    background: '#282828FF'
+    foreground: '#A8A8A8FF'
+- scope: col_3E3E3EFF
+  settings:
+    background: '#3E3E3EFF'
+    foreground: '#BEBEBEFF'
+- scope: col_4F4F4FFF
+  settings:
+    background: '#4F4F4FFF'
+    foreground: '#CFCFCFFF'
+- scope: col_F0F0F0FF
+  settings:
+    background: '#F0F0F0FF'
+    foreground: '#707070FF'
+- scope: col_323232FF
+  settings:
+    background: '#323232FF'
+    foreground: '#B2B2B2FF'
+- scope: col_343434FF
+  settings:
+    background: '#343434FF'
+    foreground: '#B4B4B4FF'
+- scope: col_808080FF
+  settings:
+    background: '#808080FF'
+    foreground: '#000000FF'
+- scope: col_C2C2C2FF
+  settings:
+    background: '#C2C2C2FF'
+    foreground: '#424242FF'
+- scope: col_454545FF
+  settings:
+    background: '#454545FF'
+    foreground: '#C5C5C5FF'
+- scope: col_484848FF
+  settings:
+    background: '#484848FF'
+    foreground: '#C8C8C8FF'
+- scope: col_272727FF
+  settings:
+    background: '#272727FF'
+    foreground: '#A7A7A7FF'
+- scope: col_474747FF
+  settings:
+    background: '#474747FF'
+    foreground: '#C7C7C7FF'
+- scope: col_545454FF
+  settings:
+    background: '#545454FF'
+    foreground: '#D4D4D4FF'
+- scope: col_202020FF
+  settings:
+    background: '#202020FF'
+    foreground: '#A0A0A0FF'
+- scope: col_D7D7D7FF
+  settings:
+    background: '#D7D7D7FF'
+    foreground: '#575757FF'
+- scope: col_DBDBDBFF
+  settings:
+    background: '#DBDBDBFF'
+    foreground: '#5B5B5BFF'
+- scope: col_7C7C7CFF
+  settings:
+    background: '#7C7C7CFF'
+    foreground: '#FCFCFCFF'
+- scope: col_979797FF
+  settings:
+    background: '#979797FF'
+    foreground: '#171717FF'
+- scope: col_9F9F9FFF
+  settings:
+    background: '#9F9F9FFF'
+    foreground: '#1F1F1FFF'
+- scope: col_5B5B5BFF
+  settings:
+    background: '#5B5B5BFF'
+    foreground: '#DBDBDBFF'
+- scope: col_535353FF
+  settings:
+    background: '#535353FF'
+    foreground: '#D3D3D3FF'
+- scope: col_A7A7A7FF
+  settings:
+    background: '#A7A7A7FF'
+    foreground: '#272727FF'
+- scope: col_252525FF
+  settings:
+    background: '#252525FF'
+    foreground: '#A5A5A5FF'
+- scope: col_929292FF
+  settings:
+    background: '#929292FF'
+    foreground: '#121212FF'
+- scope: col_CFCFCFFF
+  settings:
+    background: '#CFCFCFFF'
+    foreground: '#4F4F4FFF'
+- scope: col_707070FF
+  settings:
+    background: '#707070FF'
+    foreground: '#F0F0F0FF'
+- scope: col_909090FF
+  settings:
+    background: '#909090FF'
+    foreground: '#101010FF'
+- scope: col_5A5A5AFF
+  settings:
+    background: '#5A5A5AFF'
+    foreground: '#DADADAFF'
+- scope: col_2A2A2AFF
+  settings:
+    background: '#2A2A2AFF'
+    foreground: '#AAAAAAFF'
+- scope: col_575757FF
+  settings:
+    background: '#575757FF'
+    foreground: '#D7D7D7FF'
+- scope: col_C7C7C7FF
+  settings:
+    background: '#C7C7C7FF'
+    foreground: '#474747FF'
+- scope: col_BB80B3FF
+  settings:
+    background: '#BB80B3FF'
+    foreground: '#171717FF'
+- scope: col_883388EE
+  settings:
+    background: '#883388EE'
+    foreground: '#D3D3D3FF'
+- scope: col_883388FF
+  settings:
+    background: '#883388FF'
+    foreground: '#D6D6D6FF'
+- scope: col_838ED5FF
+  settings:
+    background: '#838ED5FF'
+    foreground: '#121212FF'
+- scope: col_229922FF
+  settings:
+    background: '#229922FF'
+    foreground: '#E7E7E7FF'
+- scope: col_229922DD
+  settings:
+    background: '#229922DD'
+    foreground: '#E0E0E0FF'
+- scope: col_FFFFCCCC
+  settings:
+    background: '#FFFFCCCC'
+    foreground: '#505050FF'
+- scope: col_FFFFCCFF
+  settings:
+    background: '#FFFFCCFF'
+    foreground: '#797979FF'
+- scope: col_FF88EEFF
+  settings:
+    background: '#FF88EEFF'
+    foreground: '#373737FF'
+- scope: col_FF88EE77
+  settings:
+    background: '#FF88EE77'
+    foreground: '#EDEDEDFF'
+- scope: col_995599FF
+  settings:
+    background: '#995599FF'
+    foreground: '#F1F1F1FF'
+- scope: col_995599DD
+  settings:
+    background: '#995599DD'
+    foreground: '#E8E8E8FF'
+- scope: col_282C35FF
+  settings:
+    background: '#282C35FF'
+    foreground: '#ABABABFF'
+- scope: col_282C33FF
+  settings:
+    background: '#282C33FF'
+    foreground: '#ABABABFF'
+- scope: col_797979FF
+  settings:
+    background: '#797979FF'
+    foreground: '#F9F9F9FF'
+- scope: col_E0E0E0FF
+  settings:
+    background: '#E0E0E0FF'
+    foreground: '#606060FF'
+- scope: col_E8E8E8FF
+  settings:
+    background: '#E8E8E8FF'
+    foreground: '#686868FF'
+- scope: col_505050FF
+  settings:
+    background: '#505050FF'
+    foreground: '#D0D0D0FF'
+- scope: col_E7E7E7FF
+  settings:
+    background: '#E7E7E7FF'
+    foreground: '#676767FF'
+- scope: col_D0D0D0FF
+  settings:
+    background: '#D0D0D0FF'
+    foreground: '#505050FF'
+- scope: col_606060FF
+  settings:
+    background: '#606060FF'
+    foreground: '#E0E0E0FF'
+- scope: col_686868FF
+  settings:
+    background: '#686868FF'
+    foreground: '#E8E8E8FF'
+- scope: col_F9F9F9FF
+  settings:
+    background: '#F9F9F9FF'
+    foreground: '#797979FF'
+- scope: col_676767FF
+  settings:
+    background: '#676767FF'
+    foreground: '#E7E7E7FF'
+- scope: col_44EE66FF
+  settings:
+    background: '#44EE66FF'
+    foreground: '#2B2B2BFF'
+- scope: col_44EE5555
+  settings:
+    background: '#44EE5555'
+    foreground: '#D7D7D7FF'
+- scope: col_44EE6666
+  settings:
+    background: '#44EE6666'
+    foreground: '#E0E0E0FF'
+- scope: col_44EE55FF
+  settings:
+    background: '#44EE55FF'
+    foreground: '#292929FF'
+- scope: col_338833FF
+  settings:
+    background: '#338833FF'
+    foreground: '#E4E4E4FF'
+- scope: col_338833AA
+  settings:
+    background: '#338833AA'
+    foreground: '#D2D2D2FF'
+- scope: col_383AF5FF
+  settings:
+    background: '#383AF5FF'
+    foreground: '#CECECEFF'
+- scope: col_383AF6FF
+  settings:
+    background: '#383AF6FF'
+    foreground: '#CECECEFF'
+- scope: col_CECECEFF
+  settings:
+    background: '#CECECEFF'
+    foreground: '#4E4E4EFF'
+- scope: col_292929FF
+  settings:
+    background: '#292929FF'
+    foreground: '#A9A9A9FF'
+- scope: col_E4E4E4FF
+  settings:
+    background: '#E4E4E4FF'
+    foreground: '#646464FF'
+- scope: col_646464FF
+  settings:
+    background: '#646464FF'
+    foreground: '#E4E4E4FF'
+- scope: col_4E4E4EFF
+  settings:
+    background: '#4E4E4EFF'
+    foreground: '#CECECEFF'
+- scope: col_A9A9A9FF
+  settings:
+    background: '#A9A9A9FF'
+    foreground: '#292929FF'
+- scope: col_BB22CCFF
+  settings:
+    background: '#BB22CCFF'
+    foreground: '#E3E3E3FF'
+- scope: col_BB22CCCC
+  settings:
+    background: '#BB22CCCC'
+    foreground: '#D8D8D8FF'
+- scope: col_E3E3E3FF
+  settings:
+    background: '#E3E3E3FF'
+    foreground: '#636363FF'
+- scope: col_D8D8D8FF
+  settings:
+    background: '#D8D8D8FF'
+    foreground: '#585858FF'
+- scope: col_585858FF
+  settings:
+    background: '#585858FF'
+    foreground: '#D8D8D8FF'
+- scope: col_636363FF
+  settings:
+    background: '#636363FF'
+    foreground: '#E3E3E3FF'
+- scope: col_FFFF5566
+  settings:
+    background: '#FFFF5566'
+    foreground: '#F9F9F9FF'
+- scope: col_6B6B6BFF
+  settings:
+    background: '#6B6B6BFF'
+    foreground: '#EBEBEBFF'
+- scope: col_FFFF55FF
+  settings:
+    background: '#FFFF55FF'
+    foreground: '#6B6B6BFF'
+- scope: col_FFFF5533
+  settings:
+    background: '#FFFF5533'
+    foreground: '#D3D3D3FF'
+- scope: col_EBEBEBFF
+  settings:
+    background: '#EBEBEBFF'
+    foreground: '#6B6B6BFF'
+- scope: col_8899DDDD
+  settings:
+    background: '#8899DDDD'
+    foreground: '#0D0D0DFF'
+- scope: col_8899DDFF
+  settings:
+    background: '#8899DDFF'
+    foreground: '#1B1B1BFF'
+- scope: col_1B1B1BFF
+  settings:
+    background: '#1B1B1BFF'
+    foreground: '#9B9B9BFF'
+- scope: col_9B9B9BFF
+  settings:
+    background: '#9B9B9BFF'
+    foreground: '#1B1B1BFF'
+- scope: col_5C6370FF
+  settings:
+    background: '#5C6370FF'
+    foreground: '#E2E2E2FF'
+- scope: col_E2E2E2FF
+  settings:
+    background: '#E2E2E2FF'
+    foreground: '#626262FF'
+- scope: col_626262FF
+  settings:
+    background: '#626262FF'
+    foreground: '#E2E2E2FF'
+- scope: col_0F0F0FFF
+  settings:
+    background: '#0F0F0FFF'
+    foreground: '#8F8F8FFF'
+- scope: col_E06C75FF
+  settings:
+    background: '#E06C75FF'
+    foreground: '#0F0F0FFF'
+- scope: col_8F8F8FFF
+  settings:
+    background: '#8F8F8FFF'
+    foreground: '#0F0F0FFF'
+- scope: col_D19A66FF
+  settings:
+    background: '#D19A66FF'
+    foreground: '#242424FF'
+- scope: col_C678DDFF
+  settings:
+    background: '#C678DDFF'
+    foreground: '#1A1A1AFF'
+- scope: col_1A1A1AFF
+  settings:
+    background: '#1A1A1AFF'
+    foreground: '#9A9A9AFF'
+- scope: col_9A9A9AFF
+  settings:
+    background: '#9A9A9AFF'
+    foreground: '#1A1A1AFF'
+- scope: col_61AFEFFF
+  settings:
+    background: '#61AFEFFF'
+    foreground: '#1E1E1EFF'
+- scope: col_1E1E1EFF
+  settings:
+    background: '#1E1E1EFF'
+    foreground: '#9E9E9EFF'
+- scope: col_9E9E9EFF
+  settings:
+    background: '#9E9E9EFF'
+    foreground: '#1E1E1EFF'
+- scope: col_56B6C2FF
+  settings:
+    background: '#56B6C2FF'
+    foreground: '#1A1A1AFF'
+- scope: col_E5C07BFF
+  settings:
+    background: '#E5C07BFF'
+    foreground: '#434343FF'
+- scope: col_5C6371FF
+  settings:
+    background: '#5C6371FF'
+    foreground: '#E2E2E2FF'
+- scope: col_98C379FF
+  settings:
+    background: '#98C379FF'
+    foreground: '#2D2D2DFF'
+- scope: col_51B4C3FF
+  settings:
+    background: '#51B4C3FF'
+    foreground: '#181818FF'
+- scope: col_FFFF00FF
+  settings:
+    background: '#FFFF00FF'
+    foreground: '#616161FF'
+- scope: col_800080FF
+  settings:
+    background: '#800080FF'
+    foreground: '#B4B4B4FF'
+- scope: col_7C4DFFFF
+  settings:
+    background: '#7C4DFFFF'
+    foreground: '#EFEFEFFF'
+- scope: col_2E3A40FF
+  settings:
+    background: '#2E3A40FF'
+    foreground: '#B7B7B7FF'
+- scope: col_4B0082FF
+  settings:
+    background: '#4B0082FF'
+    foreground: '#A5A5A5FF'
+- scope: col_50FA7BFF
+  settings:
+    background: '#50FA7BFF'
+    foreground: '#383838FF'
+- scope: col_AB7967FF
+  settings:
+    background: '#AB7967FF'
+    foreground: '#050505FF'
+- scope: col_008000FF
+  settings:
+    background: '#008000FF'
+    foreground: '#CBCBCBFF'
+- scope: col_FF5555FF
+  settings:
+    background: '#FF5555FF'
+    foreground: '#070707FF'
+- scope: col_6182B8FF
+  settings:
+    background: '#6182B8FF'
+    foreground: '#FEFEFEFF'
+- scope: col_80CBC4FF
+  settings:
+    background: '#80CBC4FF'
+    foreground: '#333333FF'
+- scope: col_FF0000FF
+  settings:
+    background: '#FF0000FF'
+    foreground: '#CCCCCCFF'
+- scope: col_945EB8FF
+  settings:
+    background: '#945EB8FF'
+    foreground: '#F8F8F8FF'
+- scope: col_0000FFFF
+  settings:
+    background: '#0000FFFF'
+    foreground: '#9D9D9DFF'
+- scope: col_F76D47FF
+  settings:
+    background: '#F76D47FF'
+    foreground: '#111111FF'
+- scope: col_13191CFF
+  settings:
+    background: '#13191CFF'
+    foreground: '#979797FF'
+- scope: col_FFC0CBFF
+  settings:
+    background: '#FFC0CBFF'
+    foreground: '#545454FF'
+- scope: col_FFA500FF
+  settings:
+    background: '#FFA500FF'
+    foreground: '#2D2D2DFF'
+- scope: col_39ADB5FF
+  settings:
+    background: '#39ADB5FF'
+    foreground: '#0B0B0BFF'
+- scope: col_00FFFFFF
+  settings:
+    background: '#00FFFFFF'
+    foreground: '#323232FF'
+- scope: col_91B859FF
+  settings:
+    background: '#91B859FF'
+    foreground: '#212121FF'
+- scope: col_8796B0FF
+  settings:
+    background: '#8796B0FF'
+    foreground: '#141414FF'
+- scope: col_263238FF
+  settings:
+    background: '#263238FF'
+    foreground: '#AFAFAFFF'
+- scope: col_00FF00FF
+  settings:
+    background: '#00FF00FF'
+    foreground: '#151515FF'
+- scope: col_E53935FF
+  settings:
+    background: '#E53935FF'
+    foreground: '#EBEBEBFF'
+- scope: col_FFB62CFF
+  settings:
+    background: '#FFB62CFF'
+    foreground: '#3C3C3CFF'
+- scope: col_EEEEEEFF
+  settings:
+    background: '#EEEEEEFF'
+    foreground: '#6E6E6EFF'
+- scope: col_C6CBD1FF
+  settings:
+    background: '#C6CBD1FF'
+    foreground: '#4A4A4AFF'
+- scope: col_586069FF
+  settings:
+    background: '#586069FF'
+    foreground: '#DEDEDEFF'
+- scope: col_F0FFF4FF
+  settings:
+    background: '#F0FFF4FF'
+    foreground: '#797979FF'
+- scope: col_B31D28FF
+  settings:
+    background: '#B31D28FF'
+    foreground: '#CBCBCBFF'
+- scope: col_EAECEFFF
+  settings:
+    background: '#EAECEFFF'
+    foreground: '#6B6B6BFF'
+- scope: col_6A737DFF
+  settings:
+    background: '#6A737DFF'
+    foreground: '#F1F1F1FF'
+- scope: col_FFEBDAFF
+  settings:
+    background: '#FFEBDAFF'
+    foreground: '#6F6F6FFF'
+- scope: col_032F62FF
+  settings:
+    background: '#032F62FF'
+    foreground: '#A7A7A7FF'
+- scope: col_FAFBFCFF
+  settings:
+    background: '#FAFBFCFF'
+    foreground: '#7A7A7AFF'
+- scope: col_E36209FF
+  settings:
+    background: '#E36209FF'
+    foreground: '#FEFEFEFF'
+- scope: col_959DA5FF
+  settings:
+    background: '#959DA5FF'
+    foreground: '#1B1B1BFF'
+- scope: col_1B1F230C
+  settings:
+    background: '#1B1F230C'
+    foreground: '#ADADADFF'
+- scope: col_735C0FFF
+  settings:
+    background: '#735C0FFF'
+    foreground: '#DADADAFF'
+- scope: col_005CC5FF
+  settings:
+    background: '#005CC5FF'
+    foreground: '#CCCCCCFF'
+- scope: col_D73A49FF
+  settings:
+    background: '#D73A49FF'
+    foreground: '#EAEAEAFF'
+- scope: col_1B1F23FF
+  settings:
+    background: '#1B1F23FF'
+    foreground: '#9E9E9EFF'
+- scope: col_0366D6FF
+  settings:
+    background: '#0366D6FF'
+    foreground: '#D5D5D5FF'
+- scope: col_F6F8FAFF
+  settings:
+    background: '#F6F8FAFF'
+    foreground: '#777777FF'
+- scope: col_DFE2E5FF
+  settings:
+    background: '#DFE2E5FF'
+    foreground: '#616161FF'
+- scope: col_24292EFF
+  settings:
+    background: '#24292EFF'
+    foreground: '#A8A8A8FF'
+- scope: col_22863AFF
+  settings:
+    background: '#22863AFF'
+    foreground: '#DFDFDFFF'
+- scope: col_E1E4E8FF
+  settings:
+    background: '#E1E4E8FF'
+    foreground: '#636363FF'
+- scope: col_6F42C1FF
+  settings:
+    background: '#6F42C1FF'
+    foreground: '#DDDDDDFF'
+- scope: col_444D56FF
+  settings:
+    background: '#444D56FF'
+    foreground: '#CBCBCBFF'
+- scope: col_D1D5DAFF
+  settings:
+    background: '#D1D5DAFF'
+    foreground: '#545454FF'
+- scope: col_FFEEF0FF
+  settings:
+    background: '#FFEEF0FF'
+    foreground: '#737373FF'
+- scope: col_00BAFFFF
+  settings:
+    background: '#00BAFFFF'
+    foreground: '#0A0A0AFF'
+- name: SublimePythonIDE Gutter Mark
+  scope: sublimepythonide.gutter-mark
+  settings:
+    foreground: '#FFFFFF'
+- name: SublimePythonIDE Error
+  scope: sublimepythonide.mark.error
+  settings:
+    foreground: '#DA2000'
+- name: SublimePythonIDE Warning
+  scope: sublimepythonide.mark.warning
+  settings:
+    foreground: '#EDBA00'
+- scope: col_038FFEFF
+  settings:
+    background: '#038FFEFF'
+    foreground: '#F1F1F1FF'
+- scope: col_7FFF00FF
+  settings:
+    background: '#7FFF00FF'
+    foreground: '#3B3B3BFF'
+- scope: col_FFD700FF
+  settings:
+    background: '#FFD700FF'
+    foreground: '#4A4A4AFF'
+- scope: col_DC143CFF
+  settings:
+    background: '#DC143CFF'
+    foreground: '#D4D4D4FF'
+- scope: col_EFEFEFFF
+  settings:
+    background: '#EFEFEFFF'
+    foreground: '#6F6F6FFF'
+- scope: col_DA2000FF
+  settings:
+    background: '#DA2000FF'
+    foreground: '#D3D3D3FF'
+- scope: col_6F6F6FFF
+  settings:
+    background: '#6F6F6FFF'
+    foreground: '#EFEFEFFF'
+- scope: col_6E6E6EFF
+  settings:
+    background: '#6E6E6EFF'
+    foreground: '#EEEEEEFF'
+- scope: col_212121FF
+  settings:
+    background: '#212121FF'
+    foreground: '#A1A1A1FF'
+- scope: col_FEFEFEFF
+  settings:
+    background: '#FEFEFEFF'
+    foreground: '#7E7E7EFF'
+- scope: col_AFAFAFFF
+  settings:
+    background: '#AFAFAFFF'
+    foreground: '#2F2F2FFF'
+- scope: col_737373FF
+  settings:
+    background: '#737373FF'
+    foreground: '#F3F3F3FF'
+- scope: col_0A0A0AFF
+  settings:
+    background: '#0A0A0AFF'
+    foreground: '#8A8A8AFF'
+- scope: col_D5D5D5FF
+  settings:
+    background: '#D5D5D5FF'
+    foreground: '#555555FF'
+- scope: col_7A7A7AFF
+  settings:
+    background: '#7A7A7AFF'
+    foreground: '#FAFAFAFF'
+- scope: col_050505FF
+  settings:
+    background: '#050505FF'
+    foreground: '#858585FF'
+- scope: col_141414FF
+  settings:
+    background: '#141414FF'
+    foreground: '#949494FF'
+- scope: col_4A4A4AFF
+  settings:
+    background: '#4A4A4AFF'
+    foreground: '#CACACAFF'
+- scope: col_616161FF
+  settings:
+    background: '#616161FF'
+    foreground: '#E1E1E1FF'
+- scope: col_111111FF
+  settings:
+    background: '#111111FF'
+    foreground: '#919191FF'
+- scope: col_EDBA00FF
+  settings:
+    background: '#EDBA00FF'
+    foreground: '#343434FF'
+- scope: col_151515FF
+  settings:
+    background: '#151515FF'
+    foreground: '#959595FF'
+- scope: col_3B3B3BFF
+  settings:
+    background: '#3B3B3BFF'
+    foreground: '#BBBBBBFF'
+- scope: col_EAEAEAFF
+  settings:
+    background: '#EAEAEAFF'
+    foreground: '#6A6A6AFF'
+- scope: col_8A8A8AFF
+  settings:
+    background: '#8A8A8AFF'
+    foreground: '#0A0A0AFF'
+- scope: col_959595FF
+  settings:
+    background: '#959595FF'
+    foreground: '#151515FF'
+- scope: col_919191FF
+  settings:
+    background: '#919191FF'
+    foreground: '#111111FF'
+- scope: col_555555FF
+  settings:
+    background: '#555555FF'
+    foreground: '#D5D5D5FF'
+- scope: col_6A6A6AFF
+  settings:
+    background: '#6A6A6AFF'
+    foreground: '#EAEAEAFF'
+- scope: col_CACACAFF
+  settings:
+    background: '#CACACAFF'
+    foreground: '#4A4A4AFF'
+- scope: col_BBBBBBFF
+  settings:
+    background: '#BBBBBBFF'
+    foreground: '#3B3B3BFF'
+- scope: col_A1A1A1FF
+  settings:
+    background: '#A1A1A1FF'
+    foreground: '#212121FF'
+- scope: col_F3F3F3FF
+  settings:
+    background: '#F3F3F3FF'
+    foreground: '#737373FF'
+- scope: col_7E7E7EFF
+  settings:
+    background: '#7E7E7EFF'
+    foreground: '#FEFEFEFF'
+- scope: col_2F2F2FFF
+  settings:
+    background: '#2F2F2FFF'
+    foreground: '#AFAFAFFF'
+- scope: col_858585FF
+  settings:
+    background: '#858585FF'
+    foreground: '#050505FF'
+- scope: col_E1E1E1FF
+  settings:
+    background: '#E1E1E1FF'
+    foreground: '#616161FF'
+- scope: col_949494FF
+  settings:
+    background: '#949494FF'
+    foreground: '#141414FF'
+- scope: col_FAFAFAFF
+  settings:
+    background: '#FAFAFAFF'
+    foreground: '#7A7A7AFF'
+uuid: 133d1250-19c6-4565-bc93-b37fd36f7fc9
