@@ -1,7 +1,8 @@
 Sublimate
 =========
 
-> This version is currently for [GMEdit](https://yellowafterlife.itch.io/gmedit) **only**!
+> :scroll:
+> This version currently supports [GMEdit](https://yellowafterlife.itch.io/gmedit), [ConEmu](https://conemu.github.io/), and [Textadept](https://orbitalquark.github.io/textadept/).
 
 **Sublimate** is a dark theme, based on Palenight, but built with Pavlovian Conditioning in mind.
 I've been developing for some time now, but only now am starting to find it in a state I can share.
