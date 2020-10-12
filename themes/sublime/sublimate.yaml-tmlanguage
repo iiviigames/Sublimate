@@ -1,10 +1,11 @@
-author: Mattia Astorino
+author: iivii
+comment: sourced from Mattia Astorino's material-palenight theme for Sublime Text
 contentName: sRGB
 scopeName:
 colorSpaceName: sRGB
 
-name: Material-Theme-Palenight
-semanticClass: material.theme.palenight
+name: Sublimate
+semanticClass: sublimate
 settings:
 - settings:
     activeGuide: '#828ED5'
