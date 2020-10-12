@@ -1,0 +1,43 @@
+--	Theme (Highlight)
+theme.normal				=	0x959DCB
+theme.operator				=	0x89DDFF
+theme.comment				=	0x676E95	--	Italic
+theme.variable				=	0x80A8FF
+theme.localvar				=	0xF78C6C	--	Italic
+theme.globalvar				=	0xFF91FD	--	Bold
+theme.colors				=	0xFFFFFF
+theme.keyword				=	0xFF5370	--	Bold
+theme.parenthesis			=	0xB2CCD6
+theme.constant				=	0xFFD569
+theme.macro					=	0xC3E845	--	Bold
+theme.string				=	0xC3E88D	--	Italic
+theme.number				=	0xF07178
+theme.func					=	0xFFCB6B
+theme.method				=	0xC792EA
+theme.class					=	0xC792EA
+theme.script				=	0xFF6BE3
+theme.enum					=	0xF9355A
+theme.field					=	0x82AAFF
+theme.type					=	0xFFCB6B
+
+--	Theme (Highlight)
+theme.normal				=	0xCB9D95
+theme.operator				=	0xFFDD89
+theme.comment				=	0x956E67	--	Italic
+theme.variable				=	0xFFA880
+theme.localvar				=	0x6C8CF7	--	Italic
+theme.globalvar				=	0xFD91FF	--	Bold
+theme.colors				=	0xFFFFFF
+theme.keyword				=	0x7053FF	--	Bold
+theme.parenthesis			=	0xD6CCB2
+theme.constant				=	0x69D5FF
+theme.macro					=	0x45E8C3	--	Bold
+theme.string				=	0x8DE8C3	--	Italic
+theme.number				=	0x7871F0
+theme.func					=	0x6BCBFF
+theme.method				=	0xEA92C7
+theme.class					=	0xEA92C7
+theme.script				=	0xE36BFF
+theme.enum					=	0x5A35F9
+theme.field					=	0xFFAA82
+theme.type					=	0x6BCBFF
