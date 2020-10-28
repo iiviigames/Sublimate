@@ -25,3 +25,4 @@ There are perfect instructions [here][PomoThemes] on how to use a custom theme, 
 [PomoThemes]:https://github.com/Splode/pomotroid/blob/master/docs/themes/themes.md
 [Pomo]:https://splode.github.io/pomotroid/
 [PomoTime]:https://en.wikipedia.org/wiki/Pomodoro_Technique
+

@@ -25,8 +25,8 @@ The goal behind **Sublimate** is to create a version for all code editors that I
 Docs for Each Application
 -------------------------
 
-+ [GMEdit](themes/gmedit/GMEdit.md)
-+ [Pomotroid](themes/pomotroid/Pomotroid.md)
++ [GMEdit](themes/gmedit)
++ [Pomotroid](themes/pomotroid)
 
 
 Notes
