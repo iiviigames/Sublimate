@@ -1,0 +1,17 @@
+{
+  "name": "Sublimate",
+  "author": "iivii",
+  "website": "https://odd.codes",
+  "colors": {
+    "--color-long-round": "#FF5370",
+    "--color-short-round": "#FFB871",
+    "--color-focus-round": "#C3E88D",
+    "--color-background": "#292D3E",
+    "--color-background-light": "#3A3F58",
+    "--color-background-lightest": "#6272a4",
+    "--color-foreground": "#959DCB",
+    "--color-foreground-darker": "#4E5579",
+    "--color-foreground-darkest": "#3A3F58",
+    "--color-accent": "#F78C6C"
+  }
+}
