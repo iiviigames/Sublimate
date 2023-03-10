@@ -2,15 +2,23 @@ Sublimate
 =========
 
 > :scroll:
-> This version currently supports [GMEdit](https://yellowafterlife.itch.io/gmedit), [ConEmu](https://conemu.github.io/), [Textadept](https://orbitalquark.github.io/textadept/), and [Pomotroid](https://splode.github.io/pomotroid/).
+> This version currently supports [GMEdit](https://yellowafterlife.itch.io/gmedit), [ConEmu](https://conemu.github.io/), [Textadept](https://orbitalquark.github.io/textadept/), [Sublime Text](https://www.sublimetext.com/) and [Pomotroid](https://splode.github.io/pomotroid/).
 
 ![pal](img/pal_big.png)
+
+
+
+> 🎨 [Click here to see a list of colors in hex](colors.md)
 
 **Sublimate** is a dark theme, based on Palenight, and hopefully will be versioned for  all of my editors of choice, for maximum Pavlovian conditioning.
 I've been developing for some time now, but only now am starting to find it in a state I can share.
 
+> _An updated look at the goods, March 2023..._
+![GMEdit w/ Sublimate Theme](img/march2023.gif)
+> _Older version's  goods..._
 ![GMEdit w/ Sublimate Theme](img/sublimate_gmedit.gif)
-> _Here's a look at the goods..._
+
+As you can see, there are some changes, and in fact _Sublimate changes a lot_. Between programs which have different levels of theme customizability, there is just a lot of room for alteration. I've been studying color theory to try to get a perfect set of colors, but its ongoing.
 
 ---
 
